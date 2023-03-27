@@ -5,6 +5,9 @@ import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import UseState from './components/useState/useState';
 import UseReducer from './components/useReducer/useReducer';
 import UseEffect from './components/useEffect/useEffect';
+import UseRef from './components/useRef/useRef';
+import ProfileValues from './components/useRef/persistValues.js';
+import InputReference from './components/useRef/inputReference';
 import UseMemo from './components/useMemo/useMemo';
 import UseCallback from './components/useCallback/useCallback';
 function App() {
@@ -28,6 +31,9 @@ function App() {
           <Route exact path='/usestate' element={< UseState />}></Route>
           <Route exact path='/usereducer' element={< UseReducer />}></Route>
           <Route exact path='/useeffect' element={< UseEffect />}></Route>
+          <Route exact path='/useref' element={< UseRef />}></Route>
+          <Route exact path='/useref/persist' element={< ProfileValues />}></Route>
+          <Route exact path='/useref/reference' element={< InputReference />}></Route>
           <Route exact path='/usememo' element={< UseMemo />}></Route>
           <Route exact path='/usecallback' element={< UseCallback />}></Route>
         </Routes>
