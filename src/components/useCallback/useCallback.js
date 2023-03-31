@@ -1,4 +1,4 @@
-import React,{useState,useCallback,useMemo} from 'react';
+import React,{useState,useCallback} from 'react';
 import ProfileValues from './profileValues';
 const UseCallback = () => {
     const [number,setNumber]=useState(0);
