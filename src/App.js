@@ -8,6 +8,7 @@ import UseEffect from './components/useEffect/useEffect';
 import UseRef from './components/useRef/useRef';
 import ProfileValues from './components/useRef/persistValues.js';
 import InputReference from './components/useRef/inputReference';
+import PreviousState from './components/useRef/previousState';
 import UseMemo from './components/useMemo/useMemo';
 import UseCallback from './components/useCallback/useCallback';
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route exact path='/useref' element={< UseRef />}></Route>
           <Route exact path='/useref/persist' element={< ProfileValues />}></Route>
           <Route exact path='/useref/reference' element={< InputReference />}></Route>
+          <Route exact path='/useref/previous' element={< PreviousState />}></Route>
           <Route exact path='/usememo' element={< UseMemo />}></Route>
           <Route exact path='/usecallback' element={< UseCallback />}></Route>
         </Routes>
